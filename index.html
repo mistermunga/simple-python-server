@@ -4,31 +4,32 @@
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>Ryan Munga</title>
+        <link rel="stylesheet" href="index-styles.css">
         <link rel="preconnect" href="https://fonts.cdnfonts.com">
         <link href="https://fonts.cdnfonts.com/css/ibm-plex-sans" rel="stylesheet">
         <link href="https://fonts.cdnfonts.com/css/ibm-plex-mono" rel="stylesheet">
     </head>
     <body>
         <header>
-            <div>
+            <div class="header-title">
                 <strong>Ryan Munga</strong> <span>/ portfolio</span>
             </div>
 
             <nav>
-                <a href="#projects">Projects</a>
+                <a href="#projects-section">Projects</a>
                 <a href="mailto:ryan.munga.njeru@gmail.com">Contact</a>
             </nav>
         </header>
         <main>
             <!-- hero section -->
-            <section>
-                <a href="https://github.com/mistermunga">github.com/mistermunga</a>
+            <section id="bio">
+                <a href="https://github.com/mistermunga" class="tagline-link">github.com/mistermunga</a>
                 <h1>Ryan Munga</h1>
                 <p>Backend developer specialising in  Java &amp; Spring Boot. Final Year Software Engineering student at USIU-Africa. Currently building at Marsoney Labs</p>
             </section>
             <!-- Skills grid -->
-            <section>
-                <div>
+            <section id="skills-section">
+                <div class="skills-container">
                     <h4>LANGUAGES</h4>
                     <ul>
                         <li>Java</li>
@@ -38,7 +39,7 @@
                         <li>Prolog</li>
                     </ul>
                 </div>
-                <div>
+                <div class="skills-container">
                     <h4>FRAMEWORKS</h4>
                     <ul>
                         <li>Spring Boot</li>
@@ -48,7 +49,7 @@
                         <li>JavaFX</li>
                     </ul>
                 </div>
-                <div>
+                <div class="skills-container">
                     <h4>DATA</h4>
                     <ul>
                         <li>PostgreSQL</li>
@@ -57,7 +58,7 @@
                         <li>Flyway</li>
                     </ul>
                 </div>
-                <div>
+                <div class="skills-container">
                     <h4>PLATFORMS</h4>
                     <ul>
                         <li>Linux (Ubuntu)</li>
@@ -69,14 +70,14 @@
                 </div>
             </section>
             <!-- Projects section -->
-            <section id="projects">
+            <section id="projects-section">
                 <h2>Selected Projects</h2>
-                <div>
-                    <div>
+                <div class="project-card">
+                    <div class="project-description">
                         <h3><a href="https://github.com/mistermunga/LitClub">LitClub</a></h3>
                         <p>Collaborative reading &amp; book club platform  with JWT auth, role-based access, and Open Library API integration.</p>
                     </div>
-                    <div>
+                    <div class="project-technologies">
                         <span>
                             <span>Spring Boot</span>
                             <span>JavaFX</span>
@@ -85,12 +86,12 @@
                         </span>
                     </div>
                 </div>
-                <div>
-                    <div>
+                <div class="project-card">
+                    <div class="project-description">
                         <h3><a href="https://github.com/mistermunga/Hashmark">HashMark</a></h3>
                         <p>Cryptographic image integrity system using Merkle Trees and SHA-256 hashing embedded in PNG data.</p>
                     </div>
-                    <div>
+                    <div class="project-technologies">
                         <span>
                             <span>Spring Boot</span>
                             <span>Thymeleaf</span>
@@ -99,12 +100,12 @@
                         </span>
                     </div>
                 </div>
-                <div>
-                    <div>
+                <div class="project-card">
+                    <div class="project-description">
                         <h3><a href="https://github.com/mistermunga/ElderCare">ElderCare</a></h3>
                         <p>Multirole medical records system with credential auth and REST endpoints for doctors, nurses, and patients.</p>
                     </div>
-                    <div>
+                    <div class="project-technologies">
                         <span>
                             <span>Spring Boot</span>
                             <span>PostgreSQL</span>
@@ -112,12 +113,12 @@
                         </span>
                     </div>
                 </div>
-                <div>
-                    <div>
+                <div class="project-card">
+                    <div class="project-description">
                         <h3><a href="https://github.com/mistermunga/Royal-Line-of-England-KB">Royal Line of England Knowledge Base</a></h3>
                         <p>Queryable genealogical knowledge base encoding the House of Normandy from Rollo to King John I.</p>
                     </div>
-                    <div>
+                    <div class="project-technologies">
                         <span>
                             <span>Prolog</span>
                             <span>SWI Prolog</span>
