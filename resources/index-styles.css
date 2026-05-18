@@ -45,6 +45,13 @@ header .container {
     padding-bottom: 20px;
 }
 
+header .dynamic-data {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
 nav {
     font-weight: normal;
     display: flex;
@@ -70,6 +77,15 @@ nav a:hover {
 
 .header-title span {
     font-weight: lighter;
+}
+
+#clock {
+    display: inline;
+}
+
+#weather {
+    display: inline;
+    padding-left: 20px;
 }
 
 
