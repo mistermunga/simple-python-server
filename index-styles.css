@@ -92,6 +92,16 @@ h1 {
     padding-bottom: 25px;
 }
 
+#bio p span {
+    opacity: 0;
+    transition: opacity 0.8s ease;
+    font-weight: normal;
+}
+
+#bio p span.text-visible {
+    opacity: 1;
+}
+
 .tagline-link {
     font-family: "IBM Plex Mono", monospace;
     font-weight: lighter;
@@ -110,6 +120,7 @@ h1 {
     font-size: 18px;
     line-height: 1.6;
     max-width: 720px;
+    font-weight: bold;
 }
 
 
