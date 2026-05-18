@@ -34,11 +34,15 @@ strong {
 header {
     font-size: 14px;
     font-weight: lighter;
+    border-bottom: black 1px solid;
+}
+
+header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    border-bottom: black 1px solid;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 nav {
@@ -80,8 +84,12 @@ h1 {
 
 #bio {
     font-size: 18px;
-    padding: 25px;
     border-bottom: black 1px solid;
+}
+
+#bio .container {
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 .tagline-link {
@@ -109,9 +117,13 @@ h1 {
 
 #skills-section {
     font-size: 16px;
-    display: flex;
-    padding: 25px 0 25px 25px;
     border-bottom: black 1px solid;
+}
+
+#skills-section .container {
+    display: flex;
+    padding-top: 25px;
+    padding-bottom: 25px;
     gap: 0;
 }
 
@@ -155,7 +167,11 @@ ul {
 
 .projects-title {
     border-bottom: black 1px solid;
-    padding: 15px 0 15px 25px;
+}
+
+.projects-title .container {
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 h2 {
@@ -179,12 +195,16 @@ h3 a:hover {
 }
 
 .project-card {
+    border-bottom: black 1px solid;
+}
+
+.project-card .container {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 25px;
-    border-bottom: black 1px solid;
     gap: 40px;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 .project-description {
@@ -226,12 +246,16 @@ h3 a:hover {
 footer {
     font-size: 12px;
     font-weight: lighter;
+    border-top: black 1px solid;
+    font-family: "IBM Plex Mono", monospace;
+}
+
+footer .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 25px;
-    border-top: black 1px solid;
-    font-family: "IBM Plex Mono", monospace;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 footer a {
