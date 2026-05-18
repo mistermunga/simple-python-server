@@ -24,4 +24,8 @@ const openMeteoApi = "https://api.open-meteo.com/v1/"
 
 const link = `${openMeteoApi}forecast?latitude=${nairobiCoordinates[0]}&longitude=${nairobiCoordinates[1]}&current=temperature_2m,weathercode&timezone=Africa/Nairobi`;
 
+async function fetchWeather() {
+    const response = await fetch(link);
+    return await response.json();
+}
 
