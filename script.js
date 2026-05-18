@@ -29,3 +29,14 @@ async function fetchWeather() {
     return await response.json();
 }
 
+async function updateWeather() {
+    try {
+        const data = await fetchWeather();
+        document.getElementById("weather").textContent =
+            `${data.current.temperature_2m}°C`;
+    } catch (error) {
+        document.getElementById("weather").textContent = "–";
+    }
+}
+
+updateWeather();
