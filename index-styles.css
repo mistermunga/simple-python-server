@@ -25,28 +25,74 @@ strong {
 header {
     font-size: 14px;
     font-weight: lighter;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: black 1px solid;
 }
 
 nav {
     font-weight: normal;
+    display: flex;
+    gap: 24px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.04em;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.header-title {
+    font-size: 14px;
+}
+
+.header-title span {
+    font-weight: lighter;
 }
 
 
 /* === Hero === */
 
 h1 {
-    font-family: "IBM Plex Sans", sans-serif;
     font-weight: bolder;
     font-size: 96px;
+    line-height: 1;
+    margin: 12px 0;
 }
 
 #bio {
     font-size: 18px;
+    padding: 25px;
+    border-bottom: black 1px solid;
 }
 
 .tagline-link {
+    font-family: "IBM Plex Mono", monospace;
     font-weight: lighter;
     font-size: 14px;
+    color: black;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.tagline-link:hover {
+    text-decoration: underline;
+}
+
+#bio p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 720px;
 }
 
 
@@ -54,12 +100,41 @@ h1 {
 
 #skills-section {
     font-size: 16px;
+    display: flex;
+    padding: 25px 0 25px 25px;
+    border-bottom: black 1px solid;
+    gap: 0;
+}
+
+.skills-container {
+    border: black 1px solid;
+    padding: 20px;
+    width: 225px;
+}
+
+.skills-container + .skills-container {
+    border-left: none;
 }
 
 h4 {
     font-size: 12px;
     font-weight: bold;
     letter-spacing: 0.08em;
+    padding-bottom: 15px;
+}
+
+li {
+    margin-bottom: 10px;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 15px;
+}
+
+li:last-child {
+    margin-bottom: 0;
+}
+
+ul {
+    list-style-type: none;
 }
 
 
@@ -69,14 +144,17 @@ h4 {
     font-size: 16px;
 }
 
+.projects-title {
+    border-bottom: black 1px solid;
+    padding: 15px 0 15px 25px;
+}
+
 h2 {
-    font-family: "IBM Plex Sans", sans-serif;
     font-size: 36px;
     font-weight: bold;
 }
 
 h3 {
-    font-family: "IBM Plex Sans", sans-serif;
     font-size: 22px;
     font-weight: bold;
     margin-bottom: 8px;
@@ -137,7 +215,23 @@ h3 a:hover {
 /* === Footer === */
 
 footer {
-    font-family: "IBM Plex Mono", monospace;
     font-size: 12px;
     font-weight: lighter;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 25px;
+    border-top: black 1px solid;
+    font-family: "IBM Plex Mono", monospace;
+}
+
+footer a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 0.08em;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
